@@ -92,11 +92,13 @@ python -m rag_queue.main
 ├── .env
 ├── docker-compose.yml
 └── rag_queue/
+    └──queue
+       ├──connection.py
+       └──worker.py             # Defines the RQ job function (Embedding & Qdrant insertion)
     ├── .venv/
     ├── requirements.txt
     ├── worker.sh                # Starts the RQ Worker process
-    ├── main.py                  # Main Server/App logic (Enqueueing and Inference)
-    └── worker.py                # Defines the RQ job function (Embedding & Qdrant insertion)
+    ├── main.py                  # Main Server/App logic (Enqueueing and Inference)      
     └── server.py                #setting up the fast api server
 
 ```
