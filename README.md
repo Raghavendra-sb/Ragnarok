@@ -97,5 +97,7 @@ python -m rag_queue.main
     ├── worker.sh                # Starts the RQ Worker process
     ├── main.py                  # Main Server/App logic (Enqueueing and Inference)
     └── worker.py                # Defines the RQ job function (Embedding & Qdrant insertion)
+    └── server.py                #setting up the fast api server
+
 ```
 
